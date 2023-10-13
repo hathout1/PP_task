@@ -11,8 +11,6 @@ void main()
     char pass[12];
     char username[] = "abdo";
     char password[] = "12345";
-    char username_input[20];
-    char pass_input[12];
     printf("Welcome Sir,\n Please Choose The Number Of The Operation You Want \n");
     printf("1- Registration \n");
     printf("2- Login \n");
@@ -42,10 +40,10 @@ void main()
         do
         {
             printf("Enter Username : ");
-            scanf("%s", &username_input);
+            scanf("%s", &user);
             printf("Enter The Password : ");
-            scanf("%s", &pass_input);
-            if (!strcmp(username_input, username) && !strcmp(pass_input, password))
+            scanf("%s", &pass);
+            if (!strcmp(user, username) && !strcmp(pass, password))
             {
                 printf("Login Success! \n");
                 break;
